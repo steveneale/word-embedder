@@ -56,24 +56,24 @@ The `config.py` file in the root directory contains a number of options for each
 
 ```python3
 config = { 
-	# The word embedding algorithm to run.
-	"word2vec": {
-		# Model variant for running 'word2vec'
-		"variant": "skipgram",
+    # The word embedding algorithm to run.
+    "word2vec": {
+        # Model variant for running 'word2vec'
+        "variant": "skipgram",
 
-		# Choose an output function for running 'word2vec'
-		"output_function": "nce",
+        # Choose an output function for running 'word2vec'
+        "output_function": "nce",
 
-		# Choose the number of skips and context window size
-		"number_of_skips": 2,
-		"context_window": 2,
+        # Choose the number of skips and context window size
+        "number_of_skips": 2,
+        "context_window": 2,
 
-		# Select a mini-batch size for training
-		"batch_size": 128,
+        # Select a mini-batch size for training
+        "batch_size": 128,
 
-		# Choose the number of negatives to be sampled
-		"negative_samples": 64
-	}
+        # Choose the number of negatives to be sampled
+        "negative_samples": 64
+    }
 }
 ```
 
